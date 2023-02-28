@@ -222,7 +222,7 @@ def test_getTestStringForTest():
 
 
 @pytest.mark.parametrize(
-    "excerciseNumber, regexPattern, testStrings",
+    "exerciseNumber, regexPattern, testStrings",
     [
         (1, "test_getPatternToTest", "test_getTestStringForTest"),
         (2, "test_getPatternToTest", "test_getTestStringForTest"),
@@ -242,12 +242,12 @@ def test_getTestStringForTest():
         "exercise7",
         ],
 )
-def test_PatternWorks(excerciseNumber, regexPattern, testStrings, request):
+def test_PatternWorks(exerciseNumber, regexPattern, testStrings, request):
     studentPatterns = request.getfixturevalue(regexPattern)
-    patternToTest = studentPatterns.getPattern(excerciseNumber)
+    patternToTest = studentPatterns.getPattern(exerciseNumber)
     testStringsObject = request.getfixturevalue(testStrings)
-    excerciseTestStrings = testStringsObject.getStrings(excerciseNumber)
-    testResults, expectedResults, generatedResults = regexPatternTest(excerciseNumber, patternToTest, excerciseTestStrings)
+    excerciseTestStrings = testStringsObject.getStrings(exerciseNumber)
+    testResults, expectedResults, generatedResults = regexPatternTest(exerciseNumber, patternToTest, excerciseTestStrings)
 
     if testResults:
         assert True
