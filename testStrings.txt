@@ -1,0 +1,32 @@
+0	CaptureSp	The quick brown fox...	The quick brown fox...
+0	CaptureSp	jumps over the lazy dog.	jumps over the lazy dog.
+1	Capture	415-555-1234	415
+1	Capture	(416)555-3456	416
+1	Capture	202 555 4567	202
+1	Capture	4035555678	403
+1	Capture	1 416 555 9292	416
+2	Match	3.14529
+2	Match	-255.34
+2	Match	128
+2	Match	1.9e+10
+2	Match	123,340.00
+2	Skip	720p
+3	Skip	.bash_profile
+3	Capture	img0912.jpg	img0912 jpg
+3	Capture	updated_img0912.png	updated_img0912 png
+3	Capture	favicon.gif	favicon gif
+3	Skip	img0912.jpg.tmp
+4	Capture	tom@hogwarts.com	tom
+4	Capture	tom.riddle@hogwarts.com	tom.riddle
+4	Capture	tom@hogwarts.eu.com	tom
+5	Skip	W/dalvikvm( 1553): threadid=1: uncaught exception
+5	Skip	E/( 1553): FATAL EXCEPTION: main
+5	Skip	E/( 1553): java.lang.StringIndexOutOfBoundsException
+5	Capture	E/( 1553):   at widget.List.makeView(ListView.java:1727)	makeView ListView.java 1727
+5	Capture	E/( 1553):   at widget.List.fillDown(ListView.java:652)	fillDown ListView.java 652
+5	Capture	E/( 1553):   at widget.List.fillFrom(ListView.java:709)	fillFrom ListView.java 709
+6	Capture	ftp://file_server.com:21/top_secret/life_changing_plans.pdf	ftp file_server.com 21
+6	Capture	https://regexone.com/lesson/introduction#section	https regexone.com
+6	Capture	file://localhost:4040/zip_file	file localhost 4040
+6	Capture	https://s3cur3-server.com:9999/	https s3cur3-server.com 9999
+6	Capture	market://search/angry%20birds	market search
